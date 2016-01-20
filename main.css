@@ -1,4 +1,25 @@
 /* Fortune Cookie Generator Styles */
+* {
+  -mox-box-sizing: border-box;
+  Box-sizing: border-box;
+  Padding: 0;
+  Margin: 0;
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.2em;
+}
+
+.wrapper {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 1em;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+body {
+  background: url("wood-background.00_jpg_srz");
+}
 
 html {
     text-align: center;
@@ -7,11 +28,17 @@ html {
 }
 
 .fortune-cookie-saying-wrapper {
-    border: 1px solid #666;
-    padding: 1em;
-    margin: 1em;
+    padding: 0.5em;
+    margin: 0.5em;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 li {
   list-style: none;
+  font-size: 1em;
+}
+
+.previous-fortunes li {
+  padding: 0, 0, 0, 0;
 }

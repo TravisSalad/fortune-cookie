@@ -36,7 +36,7 @@ var random = fortunesList[Math.floor(Math.random()*fortunesList.length)];
     // `Math.random()` to accomplish this.) Use this data to update the
     // `innerText` of the `#fortune-cookie-text` element.
 
-}
+};
 
 // The following data list is provided for you to use in your code.
 var fortunesList = [
@@ -91,4 +91,5 @@ var fortunesList = [
     "You will conquer obstacles to achieve success.",
     "Joys are often the shadows, cast by sorrows.",
     "Fortune favors the brave."
-]
+];
+

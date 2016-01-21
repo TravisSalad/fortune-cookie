@@ -11,7 +11,7 @@ var generateFortuneCookie = function() {
 	var random = fortunesList[Math.floor(Math.random()*fortunesList.length)];
 	  cookieContainer.innerHTML = random;
 	  previousFortunesContainer.innerHTML = random;
-		document.getElementById('myTune').play()
+	  document.getElementById('myTune').play();
 };
 
 var fortunesList = [

@@ -10,22 +10,20 @@
         <link rel="stylesheet" href="main.css">
         <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
         <script type="text/javascript" src="fortune-cookie-generator.js"></script>
-        <audio id="myTune">
+        <audio id="myTune" alt="crunch sound">
           <source src="potato_chip_break_or_crunch.mp3">
         </audio>
     </head>
     <body>
       <div class="wrapper">
         <h1>Fortune Cookie Generator</h1>
-        <p>Use this page to generate fortune cookie sayings.</p>
         <div class="fortune-cookie-saying-wrapper">
-        <h2 class="cookie-text" id="fortune-cookie-text">Click the cookie to find your fortune!</h2>
-        <!-- TODO: Make this button execute the `generateFortuneCookie()` function. -->
-          <img src="fortune-cookie.png" class="generate-button" onclick="document.getElementById('myTune').play(); generateFortuneCookie()">
-        </div>
+        <h2 class="cookie-text" id="fortune-cookie-text">Click the cookie to begin!</h2>
+          <img id="myImage" src="fortune-cookie.png" class="generate-button" class="gen-but" 
+						onclick="generateFortuneCookie(); changeImage()" alt="fortune cookie image" width="300px"; height="300px;">
+					</div>
         <h1>Previous Fortunes</h1>
         <ul id="previous-fortunes-container">
-        <!-- TODO: Modify javascript so previously generated fortunes are listed here. -->
         </ul>
       </div>
     </body>

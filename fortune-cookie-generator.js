@@ -21,6 +21,19 @@ var generateFortuneCookie = function() {
 	  document.getElementById('myTune').play();
 };
 
+//created function called changeImage that changes the image on click
+function changeImage() {
+	//target html class of "myImage"
+    var image = document.getElementById('myImage');
+	//created a conditional, if the source of the image or file name contains the work crack, print fortune-cookie.png
+    if (image.src.match("crack")) {
+        image.src = "fortune-cookie.png";
+	//otherwise print cookie-crack.png
+    } else {
+        image.src = "cookie-crack.png";
+    }
+}
+
 var fortunesList = [
     "People are naturally attracted to you.",
     "You learn from your mistakes... You will learn a lot today.",
@@ -75,15 +88,4 @@ var fortunesList = [
     "Fortune favors the brave."
 ];
 
-//created function called changeImage that changes the image on click
-function changeImage() {
-	//target html class of "myImage"
-    var image = document.getElementById('myImage');
-	//created a conditional, if the source of the image or file name contains the work crack, print fortune-cookie.png
-    if (image.src.match("crack")) {
-        image.src = "fortune-cookie.png";
-	//otherwise print cookie-crack.png
-    } else {
-        image.src = "cookie-crack.png";
-    }
-}
+

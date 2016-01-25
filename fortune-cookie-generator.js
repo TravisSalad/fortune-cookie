@@ -1,16 +1,23 @@
-//////////////////////////////////////////////////////////////////
-//
-// Fortune Cookie Generator
-//
-//////////////////////////////////////////
 
+//Fortune Cookie Generator
+//Travis Salad
+//Seattle University
+
+//create funciton called generateFortuneCookie
 var generateFortuneCookie = function() {
+	//create variable called cookieContainer that will be printed under fortune-cookie-text
 	var cookieContainer = document.getElementById("fortune-cookie-text");
+	//create a new list item
 	var newListItem = document.createElement("li");
+	//append list item into previous-fortunes-container
 	var previousFortunesContainer = document.getElementById("previous-fortunes-container").appendChild(newListItem);
+	//randomly generate a quote from fortunesList based on the length of the quote
 	var random = fortunesList[Math.floor(Math.random()*fortunesList.length)];
+	//print the variable random in the cookieContainer's inner HTML
 	  cookieContainer.innerHTML = random;
+	//pring the variable random in the previousFortunesContainer's innerHTML's li's
 	  previousFortunesContainer.innerHTML = random;
+	//play sound on click which is embedded into html
 	  document.getElementById('myTune').play();
 };
 
@@ -68,10 +75,14 @@ var fortunesList = [
     "Fortune favors the brave."
 ];
 
+//created function called changeImage that changes the image on click
 function changeImage() {
+	//target html class of "myImage"
     var image = document.getElementById('myImage');
+	//created a conditional, if the source of the image or file name contains the work crack, print fortune-cookie.png
     if (image.src.match("crack")) {
         image.src = "fortune-cookie.png";
+	//otherwise print cookie-crack.png
     } else {
         image.src = "cookie-crack.png";
     }
